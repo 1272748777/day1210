@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入vue的核心外部文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="radio" value="lin" name="star" v-model="name"/>上官玩儿
+        <input type="radio" value="zhu" name="star" v-model="name"/>手机话费
+        <input type="radio" value="qiao" name="star" v-model="name"/>斯蒂芬森
+        <img v-if="name=='lin'" style="width:200px;height:150px;" src="https://p0.meituan.net/wedding/b28af532360a8926251ee7bb2face051116529.jpg%40960w_300h_0e_1l%7Cwatermark%3D0"/>
+        <img v-else-if="name=='zhu'" style="width:200px;height:150px;" src="https://www.baidu.com/link?url=Jixll5RWb73tQ-HjsCzfVNgogOa9BjGs1o7Pih4A0IkQYS4StaHTxoyPmWIqITcSwicIgljWNGIFsI2s481jdS0-zfGLV6jwrEKDpMm7trkyC_tG2uZIhZEh1Rgc700_VTZw5OjyPX4k5H8CZSVcs7wB2MjqDCCINleItocLIwzeHVg9Co8zN1_IcXESDmw0vhEIjOD4W9tq1VvU_RZCt6asojgoeQOrYhf6C2T43tBlElLN0UuGjz8XjlSt_TfD97SPskXtLUiiYTwUv7zG7ii3JDVZwF0xDE6fILwrJ4SN3YLeOGJ9Sd3galv3tQPogZ4EyfQnExbmeqq7U41X-fYd8lsZWvQjUwt3D3AVLrTWnoou-d-XT_da0BBHTb141QjlXlCEdVVOI_DUdvqv6E46so3oKaTpUXkCt4MI3muqPKknsuivDEonMyEwGBs6XQYvGowUioOIu5vVSDgL7f-OiLXJPizXljzK63x5fIb-Tx_e18uIy9fX5EEFFwJzjIa_0FJq7m-cW1LsKncF6q&wd=&eqid=bb449183000fa2a5000000045def5be1"/>
+        <img v-else-if="name=='qiao'" style="width:200px;height:150px;" src="https://www.baidu.com/link?url=qx6Vbo_rfPkLU97Ny98h2qA1CCrka7xRABZOU4rN-EaapcxBtKwM0hRYMZBKgsHQpkML0TrZMGy_hnzZGFfJeaGvwWy-uCV_5XaCXW7K2sDo9J6w8mti9htXQtkoK2zIg3MfQJGH3GAQJ4zBaXRtmUPZ5nxXem47DvOsCIncaxM0xLPcad7Avn-0GXfcbhZ0h9Nf5SNSI5WtaumHFPrTwmwnrafs7pX28okZlvw3uM5RRUD0ZeweQ8W14puUVXPiM2l54KVWD4KUOB_vpRusHv2dBM11Tv6R1xr54q30IjVmDqRITHrMB5B12bB-R_ql51juRTOX1N_P2rtY6ZcC9HMYu9FESZ9EbJGFXni8KoWVK5guqAiq8uMP9Y8LjtgOvO_IhUMW73GGaLZRLgDeqrlshFgI9vRij6G9vTCTM5Ocjr4ClVGNF_YgXFL9mJGND3ZyaStKZklb6RwLzW7bwE96mib0CFaweXGnx7sjJxstsgj86xk9ccWTCTnuHdx9o07tgc8nIic4zKW4f6ywpHedLjTQw8Uc0GwhRiI0p_d34dGjUMhd7J8vw3PUEjq0&wd=&eqid=bb449183000fa2a5000000045def5be1"/>
+        <img v-else style="width:200px;height:150px;" src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4145052645,1255376937&fm=26&gp=0.jpg"/>
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                 show:'false',
+                 name:""      
+            }
+        });
+    </script>
+</body>
+</html>
